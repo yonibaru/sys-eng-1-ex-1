@@ -5,8 +5,19 @@
 #define TRUE 1
 #define FALSE 0
 
+//basicClassification.c
 int factorial(int n);
 int isStrong(int n);
+
+//advancedClassificationLoop.c
+int isArmstrong(int n);
+int isPalindrome(int n);
+int toPower(int n, int power);
+
+//advancedClassificationRecursion.c
+int isArmstrongRecursive(int n);
+int isPalindromeRecursive(int n);
+
 
 
 /* will return if a number is Armstrong number

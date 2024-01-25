@@ -7,7 +7,7 @@ int main(){
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    int temp = isPrime(num);
+    int temp = isPalindrome(num);
 
     printf("RESULT: %d \n", temp);
 }

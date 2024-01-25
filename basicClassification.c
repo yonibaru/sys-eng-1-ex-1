@@ -25,6 +25,12 @@ int isStrong(int n ){
     }
 }
 
+// We could've created a squareroot function and then iterated from 2 to sqrt(n) to slightly improve runtime (for smaller inputs)
+// but overall, the runtime would be the same: 
+// our isPrime() is O(n), while creating the suggested function would require finding the root, 
+// (newtown-raphon method) which would cost O(log n)~ and then running from 2 to sqrt(n), in total:
+// O(n + log n) = O(n) ---> Not worth implementing: runtime grows lineraly anyway for large inputs.
+
 int isPrime(int n){
     if(n <= 1){
         return FALSE; //1,0 and negatives # are not primes
@@ -35,10 +41,6 @@ int isPrime(int n){
             return FALSE;
         }
     }
-
     return TRUE;
 }
 
-
-//isPrime() - returns "boolean" (0 or 1)
-//isStrong() - returns "boolean" (0 or 1)
