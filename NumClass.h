@@ -6,6 +6,8 @@
 #define FALSE 0
 
 int factorial(int n);
+int isStrong(int n);
+
 
 /* will return if a number is Armstrong number
 An Armstrong number is an n-digit number that is equal to the sum of the nth powers of its digits.

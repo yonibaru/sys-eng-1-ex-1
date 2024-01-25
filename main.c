@@ -7,8 +7,7 @@ int main(){
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    int factorialNum = factorial(num);
+    int temp = isPrime(num);
 
-    printf("Factorial is %d \n", factorialNum);
-
+    printf("RESULT: %d \n", temp);
 }
