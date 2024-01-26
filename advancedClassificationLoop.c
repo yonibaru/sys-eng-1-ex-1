@@ -24,7 +24,6 @@ int isArmstrong(int n){
     int sum = 0;
 
     int numLength = getNumLength(n);
-
     int num = n;
     //Iterate through the number and calculate
     while(num > 0 ){
@@ -41,19 +40,20 @@ int isArmstrong(int n){
 }
 
 //The idea: create an array, each index i holds the digits at the i'th position of the number. 
-//this makes it very easy to iterate upon this problem. 
+//this makes it very easy to iterate upon every digit. 
+
 int isPalindrome(int n){
     int numLength = getNumLength(n) - 1;
 
     int *arr;
-    arr = (int *)calloc(numLength, sizeof(int)); 
+    arr = (int *)malloc(numLength * sizeof(int)); 
     if(arr == NULL){return -1;} //Memory allocation failed.
 
+    // Fill the empty array with the correct indices.
     int temp = n;
     for(int i=numLength;i>=0;i--){
         int tempNum = temp % 10;
         arr[i] = tempNum; 
-        printf("arr[%d] = %d\n",i,tempNum);
         temp = temp / 10;
     }
 
@@ -61,7 +61,6 @@ int isPalindrome(int n){
     int end = numLength;
 
     while(start<end){
-        printf("%d = %d\n",arr[start],arr[end]);
         if(arr[start] != arr[end]){
             free(arr);
             return FALSE;

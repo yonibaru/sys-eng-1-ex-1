@@ -13,6 +13,7 @@ int isStrong(int n);
 int isArmstrong(int n);
 int isPalindrome(int n);
 int toPower(int n, int power);
+int getNumLength(int n);
 
 //advancedClassificationRecursion.c
 int isArmstrongRecursive(int n);
