@@ -36,7 +36,7 @@ int isPalindromeRecursive(int n){
     arr = (int *)malloc(numLength * sizeof(int)); 
     if(arr == NULL){return -1;} //Memory allocation failed.
 
-    // Fill the empty array with the correct indices.
+    // Fill the empty array with the correct values.
     int temp = n;
     for(int i=numLength;i>=0;i--){
         int tempNum = temp % 10;
@@ -44,7 +44,6 @@ int isPalindromeRecursive(int n){
         temp = temp / 10;
     }
 
-    //arr = [1,2,3,3,2,1];
     int result = calculatePalindrome(arr,0,numLength);
     free(arr);
     return(result);

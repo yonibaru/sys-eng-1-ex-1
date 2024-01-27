@@ -8,6 +8,7 @@
 //basicClassification.c
 int factorial(int n);
 int isStrong(int n);
+int isPrime(int n);
 
 //advancedClassificationLoop.c
 int isArmstrong(int n);

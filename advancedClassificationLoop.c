@@ -49,7 +49,7 @@ int isPalindrome(int n){
     arr = (int *)malloc(numLength * sizeof(int)); 
     if(arr == NULL){return -1;} //Memory allocation failed.
 
-    // Fill the empty array with the correct indices.
+    // Fill the empty array with the correct values.
     int temp = n;
     for(int i=numLength;i>=0;i--){
         int tempNum = temp % 10;
